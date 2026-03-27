@@ -1,10 +1,10 @@
 const form = document.querySelector("form");
 
-import { getWheather } from "./getwheather.js";
+import getwheather  from "./getwheather.js";
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
-    getWheather();
+    getwheather();
 
 });
 
@@ -20,7 +20,7 @@ const weatherEmojis = {
     Smoke: "💨",
 };
 
-export function getWeatherEmoji(condition) {
+export default function getWeatherEmoji(condition) {
     return weatherEmojis[condition]|| "🌍";
 }
 
