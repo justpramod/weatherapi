@@ -1,5 +1,5 @@
-import { getWeatherEmoji } from "./app.js";
-export function displayweather(data) {
+import  getWeatherEmoji  from "./app.js";
+export default function displayweather(data) {
 
     document.querySelector("#result").innerHTML = "";
     const condition = data.weather[0].main;
