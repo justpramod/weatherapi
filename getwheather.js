@@ -1,5 +1,5 @@
  import displayweather from "./displaywheather.js"
-export async function getWheather() {
+export default async function getwheather() {
 
     const cityvalue = document.getElementById("citySearch").value;
     try {
